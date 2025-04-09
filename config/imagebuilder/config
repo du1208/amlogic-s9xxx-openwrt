@@ -9,24 +9,29 @@
 # Documentation: https://openwrt.org/docs/guide-user/additional-software/imagebuilder
 # Instructions:  Download OpenWrt firmware from the official OpenWrt,
 #                Use Image Builder to add packages, lib, theme, app and i18n, etc.
-#
 #======================================================================================
 
-# 1. Applications
+# CONFIG_PACKAGE_luci-app-ddns=y
 # CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_luci-app-opkg=y
-# end of 1. Applications
+# CONFIG_PACKAGE_luci-app-firewall=y
+# CONFIG_PACKAGE_luci-app-frpc=y
+# CONFIG_PACKAGE_luci-app-frps=y
+CONFIG_PACKAGE_luci-app-package-manager=y
+# CONFIG_PACKAGE_luci-app-ttyd=y
+# CONFIG_PACKAGE_luci-app-upnp=y
+# CONFIG_PACKAGE_luci-app-wol=y
 
-# 2. Themes
 CONFIG_PACKAGE_luci-theme-material=y
-# end of 2. Themes
 
-# 3. Translate
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
-# end of 3. Translate
+# CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-frps-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-package-manager-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
 
-# 4. Other Configuration
 CONFIG_BUSYBOX_DEFAULT_FALLOCATE=y
-# end of 4. Other Configuration
